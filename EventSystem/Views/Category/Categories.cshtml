@@ -1,0 +1,28 @@
+﻿@model List<AddCategoryViewModel>
+@{
+    ViewData["Title"] = " Category";
+}
+<partial name="_AddCategory" model="new AddCategoryViewModel()" />
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Category Name</th>
+           
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td> @item.Id</td>
+                <td>@item.CatogryName</td>
+            </tr>
+
+        }
+</table>
+
+
+

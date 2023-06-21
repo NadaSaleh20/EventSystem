@@ -1,0 +1,66 @@
+﻿@model List<EventViewModel>
+@{
+    var cateogires = ViewBag.Categories;
+}
+<label>Start Date</label>
+<input id="StartData" type="datetime-local" />
+
+<label>Name</label>
+<input id="name" type="text" />
+
+<label >Chose Cateogry</label>
+<select id="select">
+    <option value="">Select a category</option>
+    @foreach (var category in @cateogires)
+    {
+        <option value="@category.Id">@category.CatogryName</option>
+    }
+</select>
+
+<table class="table table-striped" id="EventTabel">
+    <thead>
+        <tr>
+           
+            <th scope="col"> Name</th>
+            <th scope="col">Supervisor Name</th>
+            <th scope="col">CreatedBy</th>
+            <th scope="col">CreatedAt</th>
+            <th scope="col">End Date</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">Details</th>
+            <th scope="col">Cateogry</th>
+            <th scope="col">Actions</th>
+
+           
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td> @item.Name</td>
+                <td>@item.SupervisorName</td>
+                <td>@item.CreatedBy</td>
+                <td>@item.CreatedAt</td>
+                <td>@item.EndDate</td>
+                <td>@item.StartDate</td>
+                <td>@item.Details</td>
+                <th scope="col">@item.CategoryName</th>
+               <th>
+                    <button id="update" data-id="@item.Id" data-toggle="modal" data-target="#myModal">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true" style="color: #A7CC3A;"></i>
+                    </button>
+                    <button id="delete" asp-controller="Event" asp-area="" asp-action="DeleteEvent" asp-route-EventId="@item.Id">
+                        <i class="fa fa-trash-o delete" aria-hidden="true" style="color: red; "></i>
+                    </button>
+               </th>
+
+            </tr>
+
+        }
+</table>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<script src="~/js/mangeevent.js"></script>

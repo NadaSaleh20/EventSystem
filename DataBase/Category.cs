@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EventSystem.Data
+namespace DataBase
 {
     public class Category
     {

@@ -1,5 +1,5 @@
-﻿using EventSystem.Data;
-using EventSystem.ViewModels;
+﻿using DataBase;
+using DataAccess.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -7,9 +7,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using static Humanizer.In;
+using DataAccess.ViewModels;
 
-namespace EventSystem.services
+namespace DataAccess.Services.Implementation
 {
     public class EventRepostry : IEventRepostry
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Xml.Linq;
 
-namespace EventSystem.ViewModels
+namespace DataAccess.ViewModels
 {
     public class AddCategoryViewModel
     {

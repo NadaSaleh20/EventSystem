@@ -1,5 +1,6 @@
-using EventSystem.Data;
-using EventSystem.services;
+using DataAccess.Services.Implementation;
+using DataAccess.Services.Interfaces;
+using DataBase;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;

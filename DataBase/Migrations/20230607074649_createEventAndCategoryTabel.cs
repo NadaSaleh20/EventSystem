@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace EventSystem.Data.Migrations
+namespace DataBase.Migrations
 {
     public partial class createEventAndCategoryTabel : Migration
     {

@@ -1,5 +1,5 @@
-﻿using EventSystem.services;
-using EventSystem.ViewModels;
+﻿using DataAccess.Services.Interfaces;
+using DataAccess.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ActionConstraints;
 using System;

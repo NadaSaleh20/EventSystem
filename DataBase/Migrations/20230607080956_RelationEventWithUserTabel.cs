@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace EventSystem.Data.Migrations
+namespace DataBase.Migrations
 {
     public partial class RelationEventWithUserTabel : Migration
     {

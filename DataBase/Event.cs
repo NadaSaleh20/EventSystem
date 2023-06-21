@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
 
-namespace EventSystem.Data
+namespace DataBase
 {
     public class Event
     {

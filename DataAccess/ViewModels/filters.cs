@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EventSystem.ViewModels
+namespace DataAccess.ViewModels
 {
     public class filters
     {

@@ -2,7 +2,7 @@
 using System.Xml.Linq;
 using System;
 
-namespace EventSystem.ViewModels
+namespace DataAccess.ViewModels
 {
     public class EventViewModel
     {

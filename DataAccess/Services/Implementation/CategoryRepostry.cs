@@ -1,11 +1,11 @@
-﻿using EventSystem.Data;
-using EventSystem.ViewModels;
+﻿using DataAccess.Services.Interfaces;
+using DataAccess.ViewModels;
+using DataBase;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-namespace EventSystem.services
+namespace DataAccess.Services.Implementation
 {
     public class CategoryRepostry : ICategoryRepostry
     {

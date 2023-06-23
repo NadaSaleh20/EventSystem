@@ -29,7 +29,7 @@ namespace EventSystem.Controllers
                 {
                     return RedirectToAction(nameof(Categories));
                 }
-                //Account is Already exist
+                //Cateogry is Already exist
                 else
                 {
                     ModelState.AddModelError(string.Empty, "The Cateogry is already exist"); 
@@ -37,8 +37,9 @@ namespace EventSystem.Controllers
                 }
 
             }
-
-            return View(nameof(Categories));
+            var categories = await _categoryRepostry.GetAllCateogry();
+             return View (nameof(categories) , categories);  
+          
         }
     }
 }
